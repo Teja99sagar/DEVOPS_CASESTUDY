@@ -65,14 +65,14 @@ function validate()
         if( document.getElementById("username").value == "TEST"
        && document.getElementById("password").value =="TEST" )
 	   {
-	   alert( "validation succeeded" );
-       location.href="Homepage.html";
+       setTimeout(function(){document.location.href = "Homepage.html"},500);
+       alert( "User Logged In Successfully..." );
 	   
 	   }
     else
     {
-	 alert( "validation failed" );
-	location.href="C:\Users\e5616043\Desktop\Devops\InvalidCred.html";
+       setTimeout(function(){document.location.href = "InvalidCred.html"},500);
+       alert( "User Logged In failed..." );
 
     }
 }
